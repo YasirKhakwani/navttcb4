@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hide and Show Paragraph</title>
+</head>
+<body>
+
+<p id="paragraph">This is a paragraph.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+<script>
+// Get the paragraph and buttons
+const paragraph = document.getElementById("paragraph");
+const hideButton = document.getElementById("hide");
+const showButton = document.getElementById("show");
+
+// Hide the paragraph by default
+paragraph.style.display = "none";
+
+// Event listener for the hide button
+hideButton.addEventListener("click", () => {
+  // Hide the paragraph
+  paragraph.style.display = "none";
+});
+
+// Event listener for the show button
+showButton.addEventListener("click", () => {
+  // Show the paragraph
+  paragraph.style.display = "block";
+});
+</script>
+
+</body>
+</html>
